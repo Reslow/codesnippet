@@ -1,0 +1,258 @@
+@import "/css/variables.css";
+
+
+#snippetNav{
+  display: flex;
+  flex-direction: column;
+}
+
+.selectionContainer,
+.selectionHeader {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closeAlertDiv{
+display: none;
+}
+/* selection page */
+
+.resultContainer button{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  
+.selectionHeader {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  color:var(--white);
+  position: relative;
+  font-size: 24px;
+}
+
+.selectionHeader img {
+  min-height: 30%;
+}
+
+.selectionHeaderText   {
+  min-width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.selectionContainer {
+  max-width: 100%;
+  background: var(--black);
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.resultContainer {
+  padding: 20px;
+}
+
+.snippetCon {
+  margin: 5px;
+  border-radius: 2px;
+  padding: 20px;
+  color: var(--whiteDark);
+  background-color:var(--blackLight);
+}
+
+
+.card {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  border-radius: 2px;
+  background-color: var(--white);
+  box-shadow: var(--shadow) 2px 5px 5px 2px;
+}
+
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card p {
+  color: var(--blackLight);
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+}
+
+
+.textOnImageCon {
+  display: flex;
+  max-height: 100px;
+  position: relative;
+  font-size: 24px;
+}
+
+.textOnImageCon img {
+  max-width: 90%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textOnImageText {
+  text-decoration-line: none;
+  position: absolute;
+  text-align: center;
+  color: var(--blackLight);
+  min-width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 9000px) { /*surfplatta
+  */
+  #snippetNav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .selectionContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .codeContainer{
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) { /*surfplatta
+  */
+
+  #snippetNav{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 40000px) { /*surfplatta
+  */
+  
+  #introduction{
+  max-height: 300px;
+  min-height: 200px;
+
+  }
+
+  #snippetNav{
+    display: flex;
+    flex-direction: row;
+    margin-left:15px;
+  }
+  
+
+/* selection page */
+
+  
+.selectionHeader {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  position: relative;
+}
+
+.selectionHeader img {
+  min-height: 40%;
+}
+
+
+.selectionContainer {
+  max-width: 100%;
+  display: flex;
+}
+
+.resultContainer {
+  padding: 20px;
+
+}
+
+
+.snippetCon {
+  border-radius: 2px;
+  padding: 20px;
+  width: 33%;
+  
+}
+
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  border-radius: 2px;
+}
+
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card p {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+}
+
+
+.textOnImageCon {
+  display: flex;
+  max-height: 100px;
+  position: relative;
+  font-size: 24px;
+}
+
+.textOnImageCon img {
+  max-width: 90%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textOnImageText {
+  text-decoration-line: none;
+  position: absolute;
+  text-align: center;
+}
+
+.selection{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+#selection-con{
+  overflow: hidden;
+
+}
+.buttonSelect.active {
+  background-color:var(--secondaryDark);
+  color:var(--white);
+}
+
+
+}

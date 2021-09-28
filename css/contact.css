@@ -1,0 +1,161 @@
+@import "/css/variables.css";
+
+form {
+  min-width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* form */
+.gridConForForm {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: 40px;
+  max-width: 90%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.grid-item1,.grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item4 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item5 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item6 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.grid-item7 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+textarea{
+min-height:100px;
+resize: none;
+}
+
+#submit{
+min-width: 100%;
+margin-top:40px;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px) { /*surfplatta
+  */
+ 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 9000px) { 
+
+  
+.gridConForForm {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 40px;
+  max-width: 90%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.grid-item1,.grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid-item2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.grid-item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-item4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-item5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  flex-direction: column;
+}
+.grid-item6 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.grid-item7 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+textarea{
+min-height:100px;
+resize: none;
+}
+
+#submit{
+min-width: 100%;
+margin-top:40px;
+}
+
+
+form{
+  max-width: 55%;
+  min-width: 55%;
+
+}
+
+
+}
+  
+
+  
+@media only screen and (min-width: 900px) and (max-width: 1300px) { /*surfplatta
+  */
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 40000px) { 
+  
+}

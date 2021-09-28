@@ -1,0 +1,88 @@
+
+  :root {
+    --primary:#20a719;
+    --primaryLight:#2dbd26;
+    --primaryDark:#198f13;;
+
+    --secondaryLight:#e28d1f;
+    --secondaryDark:#c87508;
+    --secondary:#d87e0a;
+
+    --shadowlight:#c5c5c533;
+    --shadow:#00000033;
+
+    --white:#f7f7f7;
+    --whiteDark:#f5f1f1;
+    --whiteDarker:#e7e5e5;
+  
+    --black:#171717;
+    --blackLight:#1a1919;
+    --blackLight:#201f1f;
+  }
+  
+:root.dark {
+  --primary:#60945d;
+    --primaryLight:#71a36e;
+    --primaryDark:#4f7c4d;
+
+    --secondary:#bb7c52;
+    --secondaryLight:#c8865a;
+    --secondaryDark:#a8714c;
+
+    --shadowlight:#92929233;
+    --shadow:#00000055;
+
+    --white:#c8c8c8;
+    --whiteDark:#a5a5a5;
+    --whiteDarker:#808080;
+  
+    --black:#181818;
+    --blackLight:#222020;
+    --blackDark:#131212;
+ 
+}
+
+:root.red {
+  --primary:#d64242;
+  --primaryLight:#e75050;
+  --primaryDark:#bd3636;
+
+  --secondary:#436fe9;
+  --secondaryLight:#3969eb;
+  --secondaryDark:#3055bd;
+
+  --shadowlight:#c2c1c133;
+  --shadow:#00000055;
+
+  --white:#eeeeee;
+  --whiteDark:#e9e7e7;
+  --whiteDarker:#dadada;
+
+  --black:#0c0b0b;
+  --blackLight:#252323;
+  --blackDark:#131212;
+
+ 
+}
+
+:root.light {
+  --primary:#63168f;
+  --primaryLight:#6d535e;
+  --primaryDark:#55137c;
+
+  --secondary:#814a0b;
+  --secondaryLight:#995201;
+  --secondaryDark:#683b08;
+
+  --shadowlight:#c2c1c133;
+  --shadow:#00000055;
+
+  --white:#f1e4cf;
+  --whiteDark:#e2d5c0;
+  --whiteDarker:#d4c7b1;
+
+  --black:#2e2720;
+  --blackLight:#3a3026;;
+  --blackDark:#251f19;
+
+}
