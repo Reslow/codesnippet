@@ -23,6 +23,7 @@
 
   <body>
     <div class="content">
+      
       <header>
         <div id="main-nav">
           <a onClick="openNav()" class="icon">
@@ -30,25 +31,28 @@
           </a>
           <div id="mylinks">
             <a onClick="closeNav()" id="closeTag"> Close </a>
+            <div id="logoHead">
             <a href="/index.html" class="logoHead">
-              <img src="images/codesnippetLogo.svg" id="logo" />code snippets</a
-            >
-            <a class="nav" href="/index.html">Home</a>
-            <a class="nav" href="/selection.html">snippets</a>
-            <a class="nav" href="/contact.html">Contact</a>
-
-            <div class="dropdown">
-              <button onclick="dropdown()" class="dropDown">Theme</button>
-              <div id="myDropDown" class="dropdown-content">
-                <button class="dark btn" onclick="setTheme('dark')">
-                  Dark
-                </button>
-                <button class="red btn" onclick="setTheme('red')">red</button>
-                <button class="light btn" onclick="setTheme('light')">
-                  light
-                </button>
+              <img src="images/codesnippetLogo.svg" id="logo" />code snippets</a>
               </div>
+              <div id="navLeft">
+                <div class="dropdown">
+                  <button onclick="dropdown()" class="dropDown">Theme</button>
+                  <div id="myDropDown" class="dropdown-content">
+                    <button class="dark btn" onclick="setTheme('dark')">Dark</button>
+                    <button class="red btn" onclick="setTheme('red')">Grey</button>
+                    <button class="light btn" onclick="setTheme('light')">Cream</button>
+                    <button class="light btn" onclick="setTheme('default')">Light</button>
+                  </div>
+                  
+                </div>
+                <div id="mainNav">
+                 <a class="nav" href="/index.html">Home</a>
+                 <a class="nav" href="/selection.html">snippets</a>
+                 <a class="nav" href="/contact.html">Contact</a>
             </div>
+          </div>
+  
           </div>
         </div>
       </header>
@@ -249,9 +253,9 @@
         <ul>
           <ul class="list">
             <li><a href="/index.html" class="firstItemInList">homepage</a></li>
-            <li><a href="/index.html">intro</a></li>
-            <li><a href="/index.html">What is ....</a></li>
-            <li><a href="/index.html">UX</a></li>
+            <li><a href="/page.html">intro</a></li>
+            <li><a href="/page.html">What is ....</a></li>
+            <li><a href="/page.html">UX</a></li>
           </ul>
           <ul class="list">
             <li>

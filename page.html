@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script  src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
+  <script src="jquery.rotator.min.js"></script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta	name="description"	content='learn to code with HTML, CSS & Javascript, develop the web faster with best practice codesnippets'	/>
+  <meta	name="keywords"	content="learn,	codesnippets,	develop, best practice, code, javascript, html, css">  
+  <meta	property="og:type"	content="website"	/>
+  <meta	property="og:title"	content="Code snippets"	/>
+  <meta	property="og:url"	content="http://localhost:3001/"/>
+  <meta	property="og:image"	content="http://localhost:3001/codesnippetLogo.svg">
+  <meta	property="og:description"	content='learn to code with HTML, CSS & Javascript, develop the web faster with best practice codesnippets'/>
+  <meta	property="og:site_name"	content="Codesnippet"/>
+  
+  <link rel="icon" type="image/svg" href="images/codesnippetLogo.svg" />
+  <link rel="stylesheet" href="/css/global.css" type="text/css" />
+  <link rel="stylesheet" href="/css/index.css" type="text/css" />
+  <title>Code Snippet</title>
+</head>
+<body>
+  <div class="content">
+
+  <header>
+    <div id="main-nav">
+      <a onClick="openNav()" class="icon">
+        <img src="images/menu.png" id="toggle" />
+      </a>
+      <div id="mylinks">
+        <a onClick="closeNav()" id="closeTag"> Close </a>
+        <div id="logoHead">
+        <a href="/index.html" class="logoHead">
+          <img src="images/codesnippetLogo.svg" id="logo" />code snippets</a>
+          </div>
+          <div id="navLeft">
+            <div class="dropdown">
+              <button onclick="dropdown()" class="dropDown">Theme</button>
+              <div id="myDropDown" class="dropdown-content">
+                <button class="dark btn" onclick="setTheme('dark')">Dark</button>
+                <button class="red btn" onclick="setTheme('red')">Grey</button>
+                <button class="light btn" onclick="setTheme('light')">Cream</button>
+                <button class="light btn" onclick="setTheme('default')">Light</button>
+              </div>
+              
+            </div>
+            <div id="mainNav">
+             <a class="nav" href="/index.html">Home</a>
+             <a class="nav" href="/selection.html">snippets</a>
+             <a class="nav" href="/contact.html">Contact</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </header>
+  <div id="bodyContainer" style="text-align: center">
+<h1>This is a article page</h1>
+<h3>This page is under construction, please come again soon</h3>
+
+</div>
+</div>
+<footer>
+    
+  <div id="sitemap">
+    <ul  style="list-style-type:none">
+      <ul class="list" ><li><a href="/index.html" class="firstItemInList">homepage</a></li>
+        <li> <a href="/index.html">intro</a></li>
+        <li><a href="/index.html">What is ....</a></li>
+        <li><a href="/index.html">UX</a></li>
+      </ul>
+      <ul class="list" >
+        <li><a href="/selection.html" class="firstItemInList">selection</a></li>
+        <li><a href="/selection.html">codesnippets</a></li>
+      </ul>
+      <ul class="list">
+        <li><a href="/contact.html" class="firstItemInList">contact</a></li>
+      </ul>
+    </ul>
+  </div>
+  <div id="author">
+    <p>Author Fanny Reslow 2021</p>
+  </div>
+  
+</footer>
+<script src="/script/nav.js"></script>
+</body>
+</html>

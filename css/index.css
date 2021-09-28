@@ -1,5 +1,9 @@
 @import "/css/variables.css";
 
+#introduction img{
+  cursor: pointer;
+}
+
 .rotate {
   animation: rotation 2s infinite linear;
 }
