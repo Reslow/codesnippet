@@ -17,7 +17,6 @@ function validateForm(){
     alert ("the inputfield is empty, please fill out your email")
     return false
   }if (message == ""){
-    console.log()
     alert ("please fill ut your message before submit")
     return false
   }
@@ -27,7 +26,7 @@ function checkbox(){
   let checkbox = document.getElementById("gdpr");
   
   if (checkbox.checked == false ){
-    alert ("Bajskorv")
+    alert ("you need to accept our GDPR terms")
   
 } 
 

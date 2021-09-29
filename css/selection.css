@@ -23,6 +23,19 @@ display: none;
   margin-right: auto;
   text-align: center;
 }
+.codeContainer{
+  display: flex;
+  min-width: 100%;
+  max-width: 100%;
+max-height: 100%;;
+
+}
+
+.alert{
+position:relative;
+right:5px;
+}
+
 
   
 .selectionHeader {
@@ -57,12 +70,33 @@ display: none;
   padding: 20px;
 }
 
+
 .snippetCon {
+  min-height: 500px;;
   margin: 5px;
   border-radius: 2px;
   padding: 20px;
   color: var(--whiteDark);
   background-color:var(--blackLight);
+  
+}
+
+.copyContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: right;
+  padding:15px;
+  
+}
+
+.copy{
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: var(--whiteDark);
+  padding:10px;
+  margin:0px 0px 15px 0px;
+  
 }
 
 
@@ -128,12 +162,7 @@ display: none;
     flex-direction: row;
   }
   
-  .codeContainer{
-    display: flex;
-    min-width: 100%;
-    max-width: 100%;
-  }
-  
+ 
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) { /*surfplatta
@@ -183,7 +212,28 @@ margin-right:auto;
 
 .selectionHeader img {
   min-height: 40%;
+  object-fit: cover;
 }
+
+.selectionButton{
+   cursor: pointer;
+    text-decoration-line: none;
+    border-radius: 2px;
+    box-shadow: #46444469 3px 4px 4px 1px;
+    color:var(--white);
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--primaryLight);
+    }
+
+    .selectionButton:hover {
+    color:var(--white);
+    box-shadow: #47454569 3px 2px 2px 1px;
+    background-color: var(--primaryDark)
+    }
 
 
 .selectionContainer {
@@ -259,6 +309,16 @@ margin-right:auto;
 .buttonSelect.active {
   background-color:var(--secondaryDark);
   color:var(--white);
+}
+
+.textareas{
+  background-color:var(--whiteDark);
+  border:var(--white) 2px solid;
+  resize: none;
+  width:100%;
+  height:60%;
+  font-size: 12px;
+  padding:10px;
 }
 
 

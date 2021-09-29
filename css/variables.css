@@ -18,6 +18,12 @@
     --black:#171717;
     --blackLight:#1a1919;
     --blackLight:#201f1f;
+    --texta:helvetica;
+
+
+
+
+
   }
   
 :root.dark {
@@ -39,6 +45,10 @@
     --black:#181818;
     --blackLight:#222020;
     --blackDark:#131212;
+
+    --texta:verdana;
+
+
  
 }
 
@@ -61,6 +71,10 @@
   --black:#0c0b0b;
   --blackLight:#252323;
   --blackDark:#131212;
+  --texta:calibri;
+
+
+
 
  
 }
@@ -84,5 +98,10 @@
   --black:#2e2720;
   --blackLight:#3a3026;;
   --blackDark:#251f19;
+ 
+  --texta:comic sans;
+  
+
+  
 
 }
