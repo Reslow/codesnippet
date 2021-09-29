@@ -1,0 +1,16 @@
+
+#bodyContainer{
+  margin-top:100px;
+  display: flex;
+  flex-direction: column;
+}
+.pageText{
+  columns: 2;
+  max-width: 60%;
+  margin:auto;
+}
+
+.pageHeadline{
+  margin:auto;
+
+}
