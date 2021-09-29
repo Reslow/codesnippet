@@ -6,7 +6,6 @@
   color:var(--secondaryDark);
   border: none;
   cursor: pointer;
-  float:right;
   padding:5px 7px 5px 7px;
   line-height:initial;
   font-family: initial;
@@ -17,6 +16,7 @@
   padding:5px 7px 5px 7px;
   color:var(--secondaryDark);
   text-decoration: none;
+  text-align: center;
 
 
 }
@@ -30,6 +30,8 @@
 }
 #mainNav{
   justify-content: end;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .dropDown:hover, .dropDown:focus {
@@ -39,7 +41,7 @@
 
 .dropdown {
   position: relative;
-  display: block;
+  margin:auto;
   
 }
 
@@ -63,7 +65,8 @@
   box-shadow: 0px 8px 16px 0px var(--shadow);
 }
 .show {
-  display: inline-block;
+  display:flex;
+  flex-direction: column;
   max-width: 100%;;
 }
 body,
@@ -101,6 +104,7 @@ header {
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
+  background-color: lawngreen;
 }
 
 
@@ -118,6 +122,7 @@ header {
   padding:4px 0px 4px 0px;
   text-decoration-line: none;
   float: left;
+  text-align: center;
 } 
 
 #logoHead a{
@@ -129,7 +134,10 @@ header {
   padding:5px;
 }
 
-
+#logoHead{
+  text-align: center;
+  margin-bottom: 20px;;
+}
 
 
 
@@ -140,6 +148,11 @@ header {
   padding: 20px 10px 20px 10px;
   cursor: pointer;
   margin:3px 3px 3px 3px;
+}
+#navLeft{
+display: flex;
+flex-direction: column-reverse;
+align-self: center;
 }
 
 .nav:hover{
@@ -313,7 +326,7 @@ footer a:hover {
 #mylinks{
   transition: 0.5s;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   min-width: 100%;
   justify-content: space-between;
   max-height:15%;
@@ -324,6 +337,7 @@ footer a:hover {
 #navLeft{
   display: flex;
   flex-direction: column;
+  justify-self: unset;
 }
 
 .icon{
