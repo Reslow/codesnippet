@@ -156,6 +156,13 @@ display: none;
 
   }
 
+ p.intro{
+max-width: 50%;
+margin-left:auto;
+margin-right:auto;
+
+ }
+
   #snippetNav{
     display: flex;
     flex-direction: row;

@@ -38,13 +38,13 @@ function removeClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-let btnContainer = document.getElementById("snippetNav");
-let btns = btnContainer && btnContainer.getElementsByClassName("btn")
+let mybtnContainer = document.getElementById("snippetNav");
+let mybtns = mybtnContainer && mybtnContainer.getElementsByClassName("mybtn")
 
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() 
+for (let i = 0; i < mybtns.length; i++) {
+  mybtns[i].addEventListener("click", function() 
   {
-    let current = btnContainer.getElementsByClassName(" active");
+    let current = mybtnContainer.getElementsByClassName(" active");
     current[0].className = current[0].className.replace(" active", '');
     this.className += " active";
   });
