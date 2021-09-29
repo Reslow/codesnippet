@@ -7,6 +7,17 @@ form {
   margin-left: auto;
 }
 
+input:focus, textarea:focus{
+  background-color: var(--secondary);
+  border: var(--secondaryDark) 1px solid;
+}
+
+input, textarea{
+  padding:10px;
+}
+label{
+  margin:10px 0px 10px 0px;
+}
 /* form */
 .gridConForForm {
   display: grid;
