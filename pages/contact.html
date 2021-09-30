@@ -19,13 +19,13 @@
       <header>
         <div id="main-nav">
           <a onClick="openNav()" class="icon">
-            <img src="images/menu.png" id="toggle" />
+            <img src="/images/menu.png" id="toggle" />
           </a>
           <div id="mylinks">
             <a onClick="closeNav()" id="closeTag"> Close </a>
             <div id="logoHead">
             <a href="/index.html" class="logoHead">
-              <img src="images/codesnippetLogo.svg" id="logo" />code snippets</a>
+              <img src="/images/codesnippetLogo.svg" id="logo" />code snippets</a>
               </div>
               <div id="navLeft">
                 <div class="dropdown">
@@ -34,14 +34,14 @@
                     <button class="dark mybtn" onclick="setTheme('dark')">Dark</button>
                     <button class="red mybtn" onclick="setTheme('red')">Grey</button>
                     <button class="light mybtn" onclick="setTheme('light')">Cream</button>
-                    <button class="light mybtn" onclick="setTheme('default')" >Default</button>
+                    <button class="light mybtn active" onclick="setTheme('default')" >Default</button>
                   </div>
                   
                 </div>
                 <div id="mainNav">
-                 <a class="nav" href="/index.html">Home</a>
-                 <a class="nav" href="/selection.html">snippets</a>
-                 <a class="nav" href="/contact.html">Contact</a>
+                 <a class="nav" href="../index.html">Home</a>
+                 <a class="nav" href="/pages/selection.html">snippets</a>
+                 <a class="nav" href="/pages/contact.html">Contact</a>
             </div>
           </div>
   
@@ -53,13 +53,13 @@
       
       <div id="bodyContainer">
         <div id="introduction">
-          <h1>Do you want to be a part of this?</h1>
+          <h1 class="firstHeading">Do you want to be a part of this?</h1>
           <p>
             We want to hear from you, Old-timer, new coder, sharing is caring
             lets build the web faster with snippets from one coder to another!
           </p>
         </div>
-        <form name="myform" action="/contact.html" method="get" onSubmit="validateForm()">
+        <form name="myform" action="/pages/contact.html" method="get" onSubmit="validateForm()">
           <div class="gridConForForm">
            
             <div class="grid-item1">
@@ -101,16 +101,16 @@
       <div id="sitemap">
         <ul>
           <ul class="list"><li><a href="/index.html" class="firstItemInList">homepage</a></li>
-          <li> <a href="/page.html">intro</a></li>
-          <li><a href="/page.html">What is ....</a></li>
-          <li><a href="/page.html">UX</a></li>
+          <li> <a href="/pages/page.html">intro</a></li>
+          <li><a href="/pages/page.html">What is ....</a></li>
+          <li><a href="/pages/page.html">UX</a></li>
         </ul>
         <ul class="list">
-          <li><a href="/selection.html" class="firstItemInList">selection</a></li>
-          <li><a href="/selection.html">codesnippets</a></li>
+          <li><a href="/pages/selection.html" class="firstItemInList">selection</a></li>
+          <li><a href="/pages/selection.html">codesnippets</a></li>
         </ul>
         <ul class="list">
-          <li><a href="/contact.html" class="firstItemInList">contact</a></li>
+          <li><a href="/pages/contact.html" class="firstItemInList">contact</a></li>
         </ul>
       </ul>
     </div>

@@ -1,16 +1,45 @@
 
 #bodyContainer{
-  margin-top:100px;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-top:50px;
 }
 .pageText{
-  columns: 2;
-  max-width: 60%;
+  
+  columns: 1;
+  max-width: 90%;
   margin:auto;
+  margin-top:30px;
 }
 
 .pageHeadline{
   margin:auto;
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 40000px) { 
+
+  .pageText{
+    columns: 2;
+    max-width: 60%;
+    margin:auto;
+  }
+  
+  #bodyContainer{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pageText{
+    columns: 2;
+    max-width: 60%;
+    margin:auto;
+    margin-top:30px;
+  }
+  
+  .pageHeadline{
+    margin:auto;
+  }  
 
 }

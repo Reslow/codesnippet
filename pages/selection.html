@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>code snippet - selection</title>
+    <link rel="icon" type="image/svg" href="images/codesnippetLogo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/selection.css" type="text/css" />
+    <link rel="stylesheet" href="../css/global.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Code snippets - selection" />
+    <meta property="og:url" content="https://codesnippets.se/selection" />
+    <meta
+      property="og:image"
+      content="http://codesnippet.se/codesnippetLogo.svg"
+    />
+    <meta
+      property="og:description"
+      content="learn to code with HTML, CSS & Javascript, develop the web faster with best practice code snippets"
+    />
+    <meta property="og:site_name" content="Codesnippet" />
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <div id="main-nav">
+          <a onClick="openNav()" class="icon">
+            <img src="/images/menu.png" id="toggle" />
+          </a>
+          <div id="mylinks">
+            <a onClick="closeNav()" id="closeTag"> Close </a>
+            <div id="logoHead">
+              <a href="/index.html" class="logoHead">
+                <img src="/images/codesnippetLogo.svg" id="logo" />code
+                snippets</a
+              >
+            </div>
+            <div id="navLeft">
+              <div class="dropdown">
+                <button onclick="dropdown()" class="dropDown">Theme</button>
+                <div id="myDropDown" class="dropdown-content">
+                  <button class="dark mybtn" onclick="setTheme('dark')">
+                    Dark
+                  </button>
+                  <button class="red mybtn" onclick="setTheme('red')">
+                    Grey
+                  </button>
+                  <button class="light mybtn" onclick="setTheme('light')">
+                    Cream
+                  </button>
+                  <button
+                    class="light mybtn active"
+                    onclick="setTheme('default')"
+                  >
+                    default
+                  </button>
+                </div>
+              </div>
+              <div id="mainNav">
+                <a class="nav" href="../index.html">Home</a>
+                <a class="nav" href="/pages/selection.html">snippets</a>
+                <a class="nav" href="/pages/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="bodyContainer">
+        <div id="introduction">
+          <h1 class="firstHeading">The Selection</h1>
+          <p class="intro">
+            This is our selection of useful and best-practise codesnippets that
+            has beengathered through our experiences with development.
+          </p>
+        </div>
+
+        <div id="snippetNav">
+          <button class="mybtn" onClick="filterItems('all')">all</button>
+          <button class="mybtn" onClick="filterItems('structure')">
+            structure
+          </button>
+          <button class="mybtn" onClick="filterItems('items')">items</button>
+          <button class="mybtn" onClick="filterItems('themes')">themes</button>
+        </div>
+        <div id="selection-con">
+          <div class="selection structure" id="card">
+            <div class="selectionHeader">
+              <img src="../images/florian-krumm-1osIUArK5oA-unsplash.jpg" />
+              <div class="selectionHeaderText">
+                <h2>card</h2>
+              </div>
+            </div>
+
+            <div class="selectionContainer">
+              <div class="codeContainer">
+                <div class="snippetCon">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="a"
+                      onClick="hideMessage('a')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button class="copy" onClick="copy('text6','a')">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+                  <h2>HTML</h2>
+                  <textarea class="textareas" id="text6" disabled>
+&ltdiv class="card"&gt
+                  &ltimg src"./images-unsplash.jpg"/&gt
+                  &ltp&gtmy first Card&lt/p&gt
+                  &lt/div&gt</textarea
+                  >
+                </div>
+
+                <div class="snippetCon">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="b"
+                      onClick="hideMessage('b')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button class="copy" onClick="copy('text5','b')">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+                  <h2>CSS</h2>
+
+                  <textarea class="textareas" id="text5" disabled>
+                    .card{ 
+                    padding-bottom: 15px;
+                    border-radius: 2px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: rgba(92, 92, 92, 0.274) 2px 5px 5px 2px;
+                    }
+                    .card img{
+                    border-radius: 2px px 0px 0px;
+                    max-width:100%;
+                    max-height:100%;
+                    }
+                    .card p{
+                    color:rgb(43, 43, 44);
+                    font-size: 12px;
+                    }
+                  </textarea>
+                </div>
+                <div class="snippetCon">
+                  <div class="card">
+                    <img src="../images/fahrul-razi-BR6lrzCPYPk-unsplash.jpg" />
+                    <p>My first card</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="selection items" id="textOnHeader">
+            <div class="selectionHeader">
+              <img src="../images/florian-krumm-1osIUArK5oA-unsplash.jpg" />
+              <div class="selectionHeaderText">
+                <h2>Text on Image</h2>
+              </div>
+            </div>
+
+            <div class="selectionContainer">
+              <div class="codeContainer">
+                <div class="snippetCon">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="c"
+                      onClick="hideMessage('c')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button class="copy" onClick="copy('text4', 'c')">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+                  <h2>HTML</h2>
+
+                  <textarea class="textareas" id="text4" disabled>
+&ltdiv class="container"&gt
+                  &ltimg src"./images-unsplash.jpg"/&gt
+                  &ltp&gtHello&lt/p&gt
+                  &lt/div&gt</textarea
+                  >
+                </div>
+
+                <div class="snippetCon">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="d"
+                      onClick="hideMessage('d')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button class="copy" onClick="copy('text3', 'd')">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+                  <h2>CSS</h2>
+                  <textarea class="textareas" id="text3" disabled>
+                    .container{
+                    position:relative;
+                   } 
+                    p{
+                    position:aboslut;
+                   }
+                    </textarea
+                  >
+                </div>
+                <div class="snippetCon">
+                  <div class="textOnImageCon">
+                    <img
+                      src="../images/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg"
+                    />
+                    <div class="textOnImageText">
+                      <h2>Hello</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="selection themes" id="button">
+            <div class="selectionHeader">
+              <img src="../images/florian-krumm-1osIUArK5oA-unsplash.jpg" />
+              <div class="selectionHeaderText">
+                <h2>Button</h2>
+              </div>
+            </div>
+
+            <div class="selectionContainer">
+              <div class="codeContainer">
+                <div class="snippetCon" id="två">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="e"
+                      onClick="hideMessage('e')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button onClick="copy('text1','e')" class="copy">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+                  <h2>HTML</h2>
+                  <textarea class="textareas" id="text1" disabled>
+&ltbutton&gt
+                  push
+                  &lt/button&gt</textarea
+                  >
+                </div>
+
+                <div class="snippetCon">
+                  <div class="copyContainer">
+                    <div
+                      class="alert alert-primary closeAlertDiv"
+                      id="f"
+                      onClick="hideMessage('f')"
+                      role="alert"
+                    >
+                      <a class="closeAlert"
+                        ><b>copied!</b>click on me to close message</a
+                      >
+                    </div>
+                    <button class="copy" onClick="copy('text2', 'f')">
+                      <img src="/images/copy.svg" width="20px" />
+                    </button>
+                  </div>
+
+                  <h2>CSS</h2>
+                  <textarea class="textareas" id="text2" disabled>
+                    button{ cursor: pointer;
+                    text-decoration-line: none;
+                    border-radius: 2px;
+                    border: rgb(40, 133, 221) 1px solid;
+                    box-shadow: rgba(209, 183, 183, 0.411) 2px 2px 2px 1px;
+                    color: rgb(40, 133, 219);
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    }
+
+                    button:hover {
+                    color: rgb(55, 141, 221);
+                    box-shadow: rgba(160, 154, 154, 0.411) 1px 1px 1px 0px;
+                    }
+                  </textarea>
+                </div>
+                <div class="snippetCon">
+                  <button class="selectionButton">push</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="sitemap">
+        <ul>
+          <ul class="list">
+            <li>
+              <a href="../index.html" class="firstItemInList">homepage</a>
+            </li>
+            <li><a href="/pages/page.html">intro</a></li>
+            <li><a href="/pages/page.html">What is ....</a></li>
+            <li><a href="/pages/page.html">UX</a></li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a href="/pages/selection.html" class="firstItemInList"
+                >selection</a
+              >
+            </li>
+            <li><a href="/pages/selection.html">codesnippets</a></li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a href="/pages/contact.html" class="firstItemInList">contact</a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div id="author">
+        <p>Author Fanny Reslow 2021</p>
+      </div>
+    </footer>
+    <script src="/script/nav.js"></script>
+    <script src="/script/filter.js"></script>
+    <script src="/script/copy.js"></script>
+  </body>
+</html>

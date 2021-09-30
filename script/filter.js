@@ -1,6 +1,4 @@
 
-
-
 filterItems("all")
 function filterItems(c) {
   let selection, i;
@@ -8,8 +6,8 @@ function filterItems(c) {
   if (c == "all") c = "";
 
   for (i = 0; i < selection.length; i++) {
-    removeClass(selection[i], "show");
-    if (selection[i].className.indexOf(c) > -1) addClass(selection[i], "show");
+    removeClass(selection[i], "showSnippet");
+    if (selection[i].className.indexOf(c) > -1) addClass(selection[i], "showSnippet");
   }
 }
 
@@ -46,6 +44,7 @@ for (let i = 0; i < mybtns.length; i++) {
   {
     let current = mybtnContainer.getElementsByClassName(" active");
     current[0].className = current[0].className.replace(" active", '');
+    console.log(classname)
     this.className += " active";
   });
 }

@@ -1,5 +1,17 @@
 @import "/css/variables.css";
 
+#toSelection{
+  border-radius: 20px;
+  color:var(--whiteDark);
+  background-color:var(--primaryDark);
+  padding:10px;
+}
+
+#toSelection:hover{
+  border:var(--primaryLight) 2px solid;
+  background-color:var(--primaryLight);
+}
+
 #introduction img{
   cursor: pointer;
 }
@@ -33,7 +45,7 @@
 .entry-points {
   display: flex;
   flex-direction: column;
-  color: var(--secondaryDark);
+  color: var(--primaryDark);
   margin: 50px 0px 20px 0px;
 }
 .entry-point-snippet:hover {
@@ -53,7 +65,7 @@
 
 .entry-point-snippet h2 {
   text-align: center;
-  border-bottom: var(--secondaryDark) 2px solid;
+  border-bottom: var(--primaryDark) 2px solid;
 }
 
 .entry-point-techniques {
@@ -67,17 +79,17 @@
   justify-content: space-between;
 }
 
-.readmore {
+.readmore{
   color: var(--white);
   padding: 7px 11px 7px 11px;
   margin-bottom: 20px;
   margin-top:20px;
   border: none;
-  background-color: var(--secondaryDark);
+  background-color: var(--primaryDark);
 }
 
 .readmore:hover {
-  background-color: var(--secondaryLight);
+  background-color: var(--primaryLight);
 
 }
 .techName {
@@ -85,7 +97,8 @@
   background-color:var(--whiteDarker);
   padding: 5px 5px 5px 5px;
   margin: 0px 5px 5px 5px;
-  font-size: 12px;;
+  font-size: 12px;
+  max-height:30%;
 }
 
 
@@ -98,6 +111,12 @@
   list-style: none;
   background-color: var(--whiteDark);
   border-bottom:var(--whiteLight) 3px solid;
+}
+
+#learn li {
+  border-bottom: var(--primary) 1px solid;
+
+
 }
 
 #learn li a {
@@ -113,7 +132,7 @@
 
 #learn li:hover {
   cursor: pointer;
-  background-color: var(--secondaryDark);
+  background-color: var(--primaryDark);
   text-decoration-line: underline;
 }
 
@@ -126,8 +145,15 @@
   border-bottom: var(--black) 5px solid;
 }
 
-.textOnLargeCard {
+.cardtext {
   padding: 10px;
+  margin-bottom: 30px;
+}
+
+.cardtext a {
+  padding: 10px;
+  color: var(--primary);
+
 }
 
 .containerOfLargeCard:hover {
@@ -137,14 +163,12 @@
 
 .containerOfLargeCards {
   transition: 0.3s;
-  box-shadow: var(--shadow) 2px 2px 2px 2px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: var(--shadow) 5px 15px 10px 5px;
 }
 .containerOfLargeCards h2 {
   font-size: 24px;
@@ -154,21 +178,21 @@
 }
 
 .containerOfLargeCard {
+  box-shadow: var(--shadow) 5px 15px 10px 5px;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-.content{
-  margin:5px;
-}
+
 
 
 /*slideshow*/
 
 #slideshow {
-  max-width: 90%;
+  max-width: 70%;
   margin: auto;
   position: relative;
   margin-bottom: 20px;
@@ -178,7 +202,6 @@
 .next {
   cursor: pointer;
   font-size: 16px;
-  margin: 0px;
   position: absolute;
   top: 50%;
   background-color: var(--white);
@@ -195,7 +218,7 @@
   background-color: var(--black);
 }
 
-.text {
+ .text{
   color: var(--text);
   background-color:var(--white);
   font-size: 26px;
@@ -206,8 +229,8 @@
   top: 20%;
   align-content: center;
   border: 2px;
-  margin-left: 30%;
-  margin-right: 70%;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 .numbertext {
@@ -243,6 +266,7 @@
   height: 300px;
   object-fit: cover;
   object-position: center;
+  width:100%
 }
 
 /*fade*/
@@ -262,6 +286,8 @@
     opacity: 1;
   }
 }
+
+
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
   /*surfplatta
@@ -298,11 +324,6 @@
   /*surfplatta
   */
 
-  .entry-points,
-  .containerOfLargeCards,
-  #slideshow {
-    max-width: 100%;
-  }
 
   .entry-points {
     flex-direction: column;
@@ -333,7 +354,7 @@
   }
 
   #bodyContainer {
-    max-width: 90;
+    max-width: 90%;
     min-width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -412,21 +433,109 @@
     width: 70%;
     flex-direction: row;
     margin: 0px;
+    margin-bottom: 100px;;
     justify-content: space-evenly;
   }
 
   .containerOfLargeCard {
     width: 49%;
-    height: 300px;
+    height: 400px;
+  }
+  .containerOfLargeCard img {
+    width: 100;
+    height: 200px;;
   }
 
   .slideshow-container {
     margin: 0px;
     max-width: 100%;
   }
+  /*Entry points to snippet collection*/
+
+  .entry-points {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+  }
+
+  .entry-point-snippet {
+    width: 30%;
+    padding: 0px 20px 25px 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 200px;
+  }
+
+  .entry-point-snippet-text p {
+    margin: 10px;
+  }
+  .entry-point-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .entry-point-techniques {
+    flex-direction: row;
+    float: left;
+  }
+  .entry-point-right {
+    width: 100%;
+  }
+  .readmore {
+    margin-top: 5px;
+    width: 60%;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 1300px) and (max-width: 40000px) {
+
+  /*Entry points to snippet collection*/
+
+  .entry-points {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top:50px;
+  }
+
+  .entry-point-snippet {
+    width: 30%;
+    padding: 0px 20px 25px 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 200px;
+  }
+
+  .entry-point-snippet-text p {
+    margin: 10px;
+  }
+  .entry-point-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .entry-point-techniques {
+    flex-direction: row;
+    float: left;
+  }
+  .entry-point-right {
+    width: 100%;
+  }
+  .readmore {
+    margin-top: 5px;
+    width: 60%;
+    font-size: 18px;
+  }
+
   #main-content {
     display: flex;
     flex-direction: column;
@@ -438,11 +547,6 @@
     max-width: 30%;
     min-width: 30%;
   }
-
-
-
-
-
 
   /*container with and cards*/
 
@@ -477,8 +581,12 @@
   margin:30px;
 }
   .cardtext a {
-    margin: 10px;
-    padding: 30px 5px 5px 5px;
+    margin: 10px 0px 0px 0px;
+    padding:  0px;
+  }
+  .containerOfLargeCards h2 {
+    font-size: 24px;
+    padding:0px;
   }
 
   .numbertext {
@@ -486,6 +594,11 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: row;
   }
 
   .dot {
@@ -505,8 +618,8 @@
   }
   
   #slideshow {
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 90%;
+    min-width: 90%;
     margin-top:100px;
   
   }
@@ -528,54 +641,11 @@
     animation-duration: 1.5s;
   }
 
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+  #toSelection{
+   width:50%;
+   margin:auto;
   }
-
-  /*Entry points to snippet collection*/
-
-  .entry-points {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-  }
-
-  .entry-point-snippet {
-    width: 30%;
-    padding: 0px 20px 25px 20px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    height: 200px;
-  }
-
-  .entry-point-snippet-text p {
-    margin: 10px;
-  }
-  .entry-point-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .entry-point-techniques {
-    flex-direction: row;
-    float: left;
-  }
-  .entry-point-right {
-    width: 100%;
-  }
-  .readmore {
-    margin-top: 5px;
-    width: 60%;
-    font-size: 18px;
-  }
+ 
+  
 
 }

@@ -1,17 +1,37 @@
 @import "/css/variables.css";
 
 
+.selection{
+display: none;
+}
+
+
+.showSnippet{
+  display: block;
+}
+
+#selection-con{
+  overflow: hidden;
+
+}
+
+
+.textareas{
+  background-color:var(--whiteDark);
+  border:var(--white) 2px solid;
+  resize: none;
+  width:100%;
+  min-height:300px;
+  font-size: 12px;
+  padding:10px;
+}
+
 #snippetNav{
   display: flex;
   flex-direction: column;
 }
 
-.selectionContainer,
-.selectionHeader {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .closeAlertDiv{
 display: none;
@@ -22,11 +42,14 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  
 }
 .codeContainer{
   display: flex;
-  min-width: 100%;
-  max-width: 100%;
+  flex-direction: column;
+  min-width: 90%;
+  max-width: 90%;
+  margin:auto;
 max-height: 100%;;
 
 }
@@ -39,12 +62,11 @@ right:5px;
 
   
 .selectionHeader {
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   max-height: 100px;
   color:var(--white);
-  position: relative;
   font-size: 24px;
 }
 
@@ -52,10 +74,14 @@ right:5px;
   min-height: 30%;
 }
 
+
+
 .selectionHeaderText   {
   min-width: 100%;
   position: absolute;
   text-align: center;
+  padding-top:20px;
+  
 }
 
 .selectionContainer {
@@ -68,6 +94,7 @@ right:5px;
 
 .resultContainer {
   padding: 20px;
+  margin-bottom: 100px;;
 }
 
 
@@ -108,6 +135,7 @@ right:5px;
   border-radius: 2px;
   background-color: var(--white);
   box-shadow: var(--shadow) 2px 5px 5px 2px;
+  position: inherit;
 }
 
 
@@ -136,6 +164,7 @@ right:5px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+  position: relative
 }
 
 .textOnImageText {
@@ -148,6 +177,10 @@ right:5px;
   margin-right: auto;
   margin-left: auto;
   
+}
+
+#introduction{
+  margin-top:100px;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 9000px) { /*surfplatta
@@ -178,12 +211,12 @@ right:5px;
 
 @media only screen and (min-width: 1300px) and (max-width: 40000px) { /*surfplatta
   */
-  
   #introduction{
-  max-height: 300px;
-  min-height: 200px;
+    margin: 0px;
+  }
 
-}
+
+
 
 p.intro{
 
@@ -197,6 +230,7 @@ margin-right:auto;
     display: flex;
     flex-direction: row;
     margin-left:15px;
+    width:100%;
   }
   
 
@@ -240,10 +274,14 @@ margin-right:auto;
 .selectionContainer {
   max-width: 100%;
   display: flex;
+  flex-direction: row;
 }
+
+
 
 .resultContainer {
   padding: 20px;
+
 
 }
 
@@ -267,6 +305,7 @@ margin-right:auto;
 .card img {
   max-width: 100%;
   max-height: 100%;
+
 }
 
 .card p {
@@ -300,14 +339,14 @@ margin-right:auto;
   display: none;
 }
 
-.show{
+.showSnippet{
   display: block;
 }
 #selection-con{
   overflow: hidden;
 
 }
-.buttonSelect.active {
+.buttonSelect .active {
   background-color:var(--secondaryDark);
   color:var(--white);
 }
@@ -320,6 +359,11 @@ margin-right:auto;
   height:60%;
   font-size: 12px;
   padding:10px;
+}
+.codeContainer{
+  display: flex;
+  flex-direction: row;
+
 }
 
 
