@@ -44,7 +44,7 @@ function setTheme(color) {
     root.setAttribute("class", "");
   }
 }
-// showing which theme is active
+// showing which theme is active and with localstorgae collecting and setting the theme
 
 const theme = localStorage.getItem("color")
 setTheme(theme)
@@ -55,6 +55,6 @@ for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    this.className += "active";
   });
 }
